@@ -1,33 +1,27 @@
 // import models
-const Product = require('./Product');
 const Category = require('./Category');
-const Tag = require('./Tag');
+const Product = require('./Product');
 const ProductTag = require('./ProductTag');
+const Tag = require('./Tag');
+
 
 // Products belongsTo Category
-Product.belongsTo(Category, {
-  foreignKey: 'category_id',
-  // The onDelete('cascade') means that when the row is deleted, it will delete all it's references and attached data too.
-  onDelete: 'CASCADE',
-});
+Product.belongsTo(Category);
 
 // Categories have many Products
-Category.hasMany(Product, {
-  foreingKey: 'category_id',
-  onDelete: 'SET NULL',
-});
+Category.hasMany(Product);
 
-// Products belongToMany Tags (through ProductTag)
-Products.belongToMany(Tag,{
+// Products belongsToMany Tags (through ProductTag)
+Product.belongsToMany(Tag, {
   through: ProductTag,
   foreignKey: 'product_id',
 });
 
-// Tags belongToMany Products (through ProductTag)
+// Tags belongsToMany Products (through ProductTag)
 Tag.belongsToMany(Product,  {
-  through:ProductTag,
-  foreingKey: 'tag_id',
-})
+  through: ProductTag,
+  foreignKey: 'tag_id',
+});
 
 module.exports = {
   Product,
