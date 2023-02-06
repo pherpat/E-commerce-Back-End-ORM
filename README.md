@@ -1,4 +1,4 @@
-# E-COMMERCE BACK END
+# E-COMMERCE BACK END - ORM
 
 ## Description
 
@@ -10,19 +10,19 @@
  - [Installation](#installation)
  - [Features](#features)
  - [Credits](#contributors--credit)
+ - [Usage](#usage)
  - [Tests](#tests)
  - [Questions](#questions)
- - [Video](#video)
 
  ## Installation
 
 To install this application, follow these steps:
-clone this project and instal the following npm packages
-nodemon
-dotenv
-express
-mysql2
-sequelize
+clone this project and instal the following npm packages: 
+nodemon,
+ dotenv,
+ express,
+ mysql2,
+ sequelize.
 
 ## License
 
@@ -32,6 +32,9 @@ sequelize
 
  Xandromus, 
  dependabot[bot]
+
+## Usage
+View the video walkthrough: [Video](https://)
 
 ## Tests
 
@@ -50,7 +53,5 @@ patinopher@gmail.com, or visit my GitHub account at
 
  This is an open source, you can create a branch and send me a pull request.
 
- ## Video
-
- Link to the screen recording showing the app functionality [video](https://drive.google.com/file/d/1YIvuyLXNgbpcCZAITGfEBC4ysKpM39df/view)
+ 
 

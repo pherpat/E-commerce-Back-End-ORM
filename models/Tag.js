@@ -1,8 +1,12 @@
+// import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
+// import our database connection from config/connection.js
 const sequelize = require('../config/connection.js');
 
+// Create a new Sequelize model for Tag
 class Tag extends Model {}
 
+// Set up fields and rules for Tag
 Tag.init(
   {
     id: {
@@ -16,6 +20,7 @@ Tag.init(
     }
   },
   {
+     // Link to database connection
     sequelize,
     timestamps: false,
     freezeTableName: true,

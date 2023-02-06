@@ -13,10 +13,11 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// routes middleware is added to the Express aplication
+// turn on routes
 app.use(routes);
 
-// sync sequelize models to the database, then turn on the server
+// turn on connection to db and server
+// Force false so data doesn't get dropped on every sync
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
