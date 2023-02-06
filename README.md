@@ -1,4 +1,4 @@
-# E-COMMERCE BACK END - ORM
+# E-COMMERCE BACK END - ORM APP
 
 ## Description
 
