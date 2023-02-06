@@ -17,7 +17,7 @@
  ## Installation
 
 To install this application, follow these steps:
-clone this project and instal the folling npm packages
+clone this project and instal the following npm packages
 nodemon
 dotenv
 express
