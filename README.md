@@ -34,7 +34,7 @@ nodemon,
  dependabot[bot]
 
 ## Usage
-View the video walkthrough: [Video](https://)
+View the video walkthrough: [Video](https://drive.google.com/file/d/1L1bRrCbp8J288_5hePF_3CPUmDDiRQjS/view)
 
 ## Tests
 
